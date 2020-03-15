@@ -6,6 +6,7 @@ $(function() {
 
             var arr = (data['series'][0]['datos']);
             console.log(arr);
+            console.log(data)
         }
     });
 })
