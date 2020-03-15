@@ -1,11 +1,11 @@
 $(function() {
 
     $.ajax({
-        url: 'https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF4378?token=8fdb779315f6a04ff358eb03287ee823ee2473623a3c4a1797b814d75be8c1d8',
+        url: 'https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718?token=8fdb779315f6a04ff358eb03287ee823ee2473623a3c4a1797b814d75be8c1d8',
         success: function(data) {
 
             console.log(data);
-
+/*
             Highcharts.chart('container', {
                 chart: {
                     zoomType: 'x'
@@ -60,7 +60,7 @@ $(function() {
                     name: 'USD to EUR',
                     data: data
                 }]
-            });
+            });*/
         }
     });
 })
@@ -263,5 +263,5 @@ Highcharts.theme = {
         trackBorderColor: '#404043'
     }
 };
-// Apply the theme
+
 Highcharts.setOptions(Highcharts.theme);
