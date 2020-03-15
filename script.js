@@ -6,9 +6,15 @@ $(function() {
 
             var arr = (data['bmx']['series'][0]['datos']);
             console.log(arr);
+            console.log(arr.length);
+
+            for(var i = 0; i < arr.length; i++) {
+
+                console.log(i++);
+            }
         }
     });
-})
+});
 
 Highcharts.createElement('link', {
     href: 'https://fonts.googleapis.com/css?family=Unica+One',
