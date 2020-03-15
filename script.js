@@ -4,9 +4,8 @@ $(function() {
         url: 'https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718/datos?token=8fdb779315f6a04ff358eb03287ee823ee2473623a3c4a1797b814d75be8c1d8',
         success: function(data) {
 
-            var arr = (data['series'][0]['datos']);
+            var arr = (data['bmx']['series'][0]['datos']);
             console.log(arr);
-            console.log(data)
         }
     });
 })
